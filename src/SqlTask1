@@ -1,0 +1,15 @@
+select CustomerName,City from Customers;
+select distinct Country from Customers;
+select count(distinct Country) from Customers;
+select * from Customers where Country = 'Mexico';
+select City , Address from Customers where CustomerId = 1;
+select * from Customers where Country = 'Germany' or Country="Spain";
+select * from Customers order by Country;
+select * from Customers order by CustomerName desc;
+select * from Customers where Address='Null';
+select min(Price) from Products;
+select count(*) from Products;
+select * from Customers where CustomerName like "A%";
+select * from Customers where Country="Germany" or Country="France" or Country="UK";
+select * from Customers,Suppliers where Customers.Country=Suppliers.Country;
+select * from Orders where OrderDate between '1996-01-01' and '1996.12.31'
